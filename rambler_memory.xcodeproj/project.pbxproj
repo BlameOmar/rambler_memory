@@ -10,6 +10,7 @@
 		073D2F1B1A40F67000E76071 /* example.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073D2F1A1A40F67000E76071 /* example.cpp */; };
 		073D2F1C1A40FA6000E76071 /* librambler_memory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D814401A3D08EC001C5727 /* librambler_memory.a */; };
 		073D2F1E1A41167F00E76071 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 073D2F1D1A41167F00E76071 /* README.md */; };
+		073D2F201A4128DE00E76071 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = 073D2F1F1A4128DE00E76071 /* LICENSE.md */; };
 		07A235A91A3D0CD1001E17E8 /* librambler_memory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D814401A3D08EC001C5727 /* librambler_memory.a */; };
 		07A235AA1A3D0CD7001E17E8 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D814531A3D0A7D001C5727 /* libc++.dylib */; };
 		07A235AB1A3D0D0A001E17E8 /* example.c in Sources */ = {isa = PBXBuildFile; fileRef = 07B8D99F1A3CC1DB00CF92D4 /* example.c */; };
@@ -46,6 +47,7 @@
 		073D2F131A40F50200E76071 /* example (C++) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "example (C++)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		073D2F1A1A40F67000E76071 /* example.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = example.cpp; sourceTree = "<group>"; };
 		073D2F1D1A41167F00E76071 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		073D2F1F1A4128DE00E76071 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		07A235A21A3D0CA1001E17E8 /* example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = example; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B8D99F1A3CC1DB00CF92D4 /* example.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = example.c; sourceTree = "<group>"; };
 		07B8D9A61A3CC2F700CF92D4 /* shared_memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shared_memory.cpp; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		07B8D9931A3CC1DB00CF92D4 = {
 			isa = PBXGroup;
 			children = (
+				073D2F1F1A4128DE00E76071 /* LICENSE.md */,
 				073D2F1D1A41167F00E76071 /* README.md */,
 				07B8D99E1A3CC1DB00CF92D4 /* Source Code */,
 				07A235A31A3D0CA1001E17E8 /* example */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073D2F1E1A41167F00E76071 /* README.md in Sources */,
+				073D2F201A4128DE00E76071 /* LICENSE.md in Sources */,
 				073D2F1B1A40F67000E76071 /* example.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
