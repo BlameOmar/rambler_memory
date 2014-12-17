@@ -13,8 +13,6 @@ namespace rambler { namespace memory {
 
     template <typename T>
     class SharedMemoryAllocator {
-    private:
-        MemoryManager * memory_manager;
     public:
         using value_type        = T;
         using pointer           = value_type *;
@@ -25,12 +23,14 @@ namespace rambler { namespace memory {
         using difference_type   = ptrdiff_t;
         template< class U > struct rebind { typedef SharedMemoryAllocator<U> other; };
 
+        MemoryManager * const memory_manager;
+
         SharedMemoryAllocator() : memory_manager(MemoryManager::default_manager()) {}
         SharedMemoryAllocator(MemoryManager * mm) : memory_manager(mm) {}
         SharedMemoryAllocator(const SharedMemoryAllocator & other) = default;
 
         template< class U >
-        SharedMemoryAllocator(const SharedMemoryAllocator<U> & other) {}
+        SharedMemoryAllocator(const SharedMemoryAllocator<U> & other) : memory_manager(other.memory_manager) {}
 
         pointer allocate(size_type n, std::allocator<void>::const_pointer hint = 0) {
             return static_cast<pointer>(memory_manager->reserve_memory(n, sizeof(T)));
